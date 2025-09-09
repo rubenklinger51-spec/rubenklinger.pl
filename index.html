@@ -24,13 +24,18 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: center;
     }
+	img.responsive {
+	      width: 50%; /* domyślnie na komputerze */
+	      max-width: 100%; /* żeby nie przekroczyło szerokości kontenera */
+	      height: auto;
+	    }
+	
+	    /* Na telefonach (ekrany max 768px) zmień na 100% */
+	    @media (max-width: 768px) {
+	      img.responsive {
+	        width: 100%;
+	      }
 
-    img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      margin-top: 10px;
-    }
 
     h2 {
       color: red;
@@ -85,5 +90,6 @@
 	  </div>
 </body>
 </html>
+
 
 
