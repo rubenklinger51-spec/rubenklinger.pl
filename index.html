@@ -23,11 +23,20 @@
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: center;
-    }
 	img {
-	      width: 100%; 
-	      height: auto;
+	  max-width: 50%;
+	  height: auto;
+	  border-radius: 12px;
+	  margin-top: 10px;
 	}
+	
+	/* Na telefonach obrazek zajmuje 100% */
+	@media (max-width: 768px) {
+	  img {
+	    max-width: 100%;
+	  }
+	}
+
 
     h2 {
       color: red;
@@ -82,6 +91,7 @@
 	  </div>
 </body>
 </html>
+
 
 
 
